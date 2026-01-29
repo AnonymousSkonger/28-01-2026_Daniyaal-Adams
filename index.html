@@ -3,15 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Main Portfolio</title>
+    <title>Portfolio</title>
     <style>
         body {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            background-color: lightcoral;
         }
         header{
-            background-color: crimson;
+            background-color: maroon;
             color: white;
             padding: 1.2%;
             text-align: center;
@@ -35,25 +36,57 @@
             border-radius: 4px;
             color: black;
         }
-        main {
+        #summary {
             display: flex;
             align-items: flex-start;
             gap: 20px;
             padding: 20px;
+            margin: 20px;
+            background-color: orangered;
+            border-radius: 15px;
         }
-        #summary {
+        #about-text {
             flex: 1;
         }
-        #video {
+        #about-video {
             flex: 1;
+        }
+        #education {
+            padding: 20px;
+            margin: 20px;
+            background-color: red;
+            border-radius: 15px;
+        }
+        #skills {
+            padding: 20px;
+            margin: 20px;
+            background-color: crimson;
+            border-radius: 15px;
+        }
+        #skills ul li{
+            list-style: none;
+        }
+        #skills ul li ul li {
+            list-style: initial;
+        }
+        #career {
+            padding: 20px;
+            margin: 20px;
+            background-color: brown;
+            border-radius: 15px;
+        }
+        #contact {
+            padding: 20px;
+            margin: 20px;
+            background-color: indianred;
+            border-radius: 15px;
         }
         footer {
             color: white;
-            background-color: crimson;
+            background-color: maroon;
             padding: 0.7%;
             font-family: Arial, Helvetica, sans-serif;
             text-align: center;
-            position: absolute;
             bottom: 0;
             left: 0;
             right: 0;
@@ -61,43 +94,114 @@
     </style>
 </head>
 <body>
-    <header>
+    <header id="home">
         <h1>Portfolio of Daniyaal Adams</h1>
     </header>
     <nav>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Contact</a>
+        <a href="#home">Home</a>
+        <a href="#summary">About</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
     </nav>
     <main>
-        <section id="summary">
-            <h2>About Me</h2>
-            <p>
-                Hello! My name is Daniyaal Adams 
-                and I am a student at Alfidaa 
-                do4sa Make Me a Coder, learning how 
-                to begin my game developing career.
-            </p>
-            <p>
-                My learnership started in November, 
-                where I got equated with the structure 
-                and layout of HTML and became familiar 
-                with it by December. As of now, I am 
-                currently studying CSS and have a good 
-                grasp of it.
+        <article id="summary">
+            <section id="about-text">
+                <h2>About Me</h2>
+                <p>
+                    Hello! My name is Daniyaal Adams 
+                    and I am a student at Alfidaa 
+                    do4sa Make Me a Coder, learning how 
+                    to begin my game developing career.
+                </p>
+                <p>
+                    My learnership started in November, 
+                    where I got equated with the structure 
+                    and layout of HTML and became familiar 
+                    with it by December. As of now, I am 
+                    currently studying CSS and have a good 
+                    grasp of it.
+                </p>
+            </section>
+            <section id="about-video">
+                <video width="500" controls>
+                    <source src="Portfolio Info.mp4" type="Video/mp4">
+                    "Your browser does not support HTML Video."
+                </video>
+            </section>
+        </article>
+        <section id="education">
+            <h2>Education</h2>
+        </section>
+        <section id="skills">
+            <h2>Technical Skills</h2>
+            <ul>
+            <li><strong>Front-End Development</strong>
+                <ul>
+                    <li>HTML 5</li>
+                    <li>CSS 3</li>
+                    <li>JavaScript</li>
+                </ul>
+            </li>
+            <br>
+            <li><strong>Back-End & Programming</strong>
+                <ul>
+                    <li>Python</li>
+                </ul>
+            </li>
+            <br>
+            <li><strong>Frameworks</strong>
+                <ul>
+                    <li>Flask</li>
+                    <li>Django</li>
+                </ul>
+            </li>
+                
+                <br>
+            <li><strong>Database Management Systems</strong>
+                <ul>
+                    <li>SQL (Structured Query Language)</li>
+                    <li>Relational Database Concepts</li>
+                </ul>
+            </li>
+                <br>
+            <li><strong>Operating Systems</strong>
+                <ul>
+                    <li>Linux</li>
+                </ul>  
+            </li>
+            <br>
+            <li><strong>Development Tools</strong>
+                <ul>
+                    <li>Git</li>
+                    <li>GitHub</li>
+                    <li>VS Code</li>
+                </ul>
+            </li>    
+            </ul>
+        </section>
+        <section id="career">
+            <h2>Career Goals</h2>
+            <p> 
+                To be a game developer and 
+                coder, as well as being a front
+                and back end developer for my and 
+                many other websites.
             </p>
         </section>
-        <section id="video">
-            <video width="500" controls>
-                <source src="Portfolio Info.mp4" type="Video/mp4">
-                "Your browser does not support HTML Video."
-            </video>
+        <section id="contact">
+            <h3>Contact</h3>
+            <a href="mailto:daniyaal.adams26@gmail.com">daniyaal.adams26@gmail.com</a>
+            <br>
+            <a href="https://github.com/AnonymousSkonger">Github</a>
+            <br>
+            <a href="https://www.linkedin.com/in/daniyaal-adams-887668397/overlay/contact-info/">LinkedIn</a>
+            <br>
+            <a href="tel:+27 83 513 9972">083 513 9972</a>
         </section>
     </main>
     <footer>
         <h3>&copy; Portfolio of Daniyaal Adams 2026</h3>
     </footer>
 </body>
-
 </html>
