@@ -4,114 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            background-color: lightcoral;
-        }
-        header{
-            background-color: maroon;
-            color: white;
-            padding: 1.2%;
-            text-align: center;
-            font-family: Arial, sans-serif;
-        }
-        nav {
-            background-color: firebrick;
-            display: flex;
-            justify-content: center;
-            padding: 10px 0;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            padding: 10px 20px;
-            font-family: sans-serif;
-            transition: background-color 0.3s ease;
-        }
-        nav a:hover {
-            background-color: tomato;
-            border-radius: 4px;
-            color: black;
-        }
-        #summary {
-            display: flex;
-            align-items: flex-start;
-            gap: 20px;
-            padding: 20px;
-            margin: 20px;
-            background-color: orangered;
-            border-radius: 15px;
-        }
-        #about-text {
-            flex: 1;
-        }
-        #about-video {
-            flex: 1;
-        }
-        #education {
-            padding: 20px;
-            margin: 20px;
-            background-color: red;
-            border-radius: 15px;
-        }
-        #skills {
-            padding: 20px;
-            margin: 20px;
-            background-color: crimson;
-            border-radius: 15px;
-        }
-        #skills ul li{
-            list-style: none;
-        }
-        #skills ul li ul li {
-            list-style: disc;
-        }
-        #skills ul li ul li ul.a li{
-            list-style: circle;
-        }
-        #career {
-            padding: 20px;
-            margin: 20px;
-            background-color: brown;
-            border-radius: 15px;
-        }
-        #contact {
-            padding: 20px;
-            margin: 20px;
-            background-color: indianred;
-            border-radius: 15px;
-        }
-        #contact a {
-            color: black;
-        }
-        #contact a:hover {
-            color: white;
-        }
-        footer {
-            color: white;
-            background-color: maroon;
-            padding: 0.7%;
-            font-family: Arial, Helvetica, sans-serif;
-            text-align: center;
-            bottom: 0;
-            left: 0;
-            right: 0;
-        }
-    </style>
+    <meta name="description" content="Personal portfolio website of an aspiring Full-Stack Web Developer.">
+    <meta name="keywords" content="Portfolio, Web Developer, HTML5, CSS3, Responsive Design">
+    <meta name="author" content="Daniyaal Adams">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
     <header id="home">
         <h1>Portfolio of Daniyaal Adams</h1>
     </header>
     <nav>
-        <a href="#home">Home</a>
-        <a href="#summary">About</a>
-        <a href="#education">Education</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
+        <a href="#summary"><i class="fas fa-user"></i> About</a>
+        <a href="#education"><i class="fas fa-graduation-cap"></i> Education</a>
+        <a href="#skills"><i class="fas fa-code"></i> Skills</a>
+        <a href="#projects"><i class="fas fa-laptop-code"></i> Projects</a>
+        <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
     </nav>
     <main>
         <article id="summary">
@@ -202,19 +110,32 @@
             </p>
         </section>
         <section id="contact">
-            <h3>Contact</h3>
-            <a href="mailto:daniyaal.adams26@gmail.com">daniyaal.adams26@gmail.com</a>
-            <br>
-            <a href="https://github.com/AnonymousSkonger">Github</a>
-            <br>
-            <a href="https://www.linkedin.com/in/daniyaal-adams-887668397/overlay/contact-info/">LinkedIn</a>
-            <br>
-            <a href="tel:+27 83 513 9972">083 513 9972</a>
+            <section id="contact-details">
+                <h3>Contact</h3>
+                <a href="mailto:daniyaal.adams26@gmail.com"><i class="fas fa-envelope"></i> daniyaal.adams26@gmail.com</a>
+                <br>
+                <a href="https://github.com/AnonymousSkonger"><i class="fab fa-github"></i> Github</a>
+                <br>
+                <a href="https://www.linkedin.com/in/daniyaal-adams-887668397/overlay/contact-info/"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <br>
+                <a href="tel:+27 83 513 9972"><i class="fas fa-phone"></i> +27 83 513 9972</a>
+                <p><i class="fas fa-map-marker-alt"></i> 10 Adams Street, Gqebehra, South Africa</p>
+            </section>
+            <form id="contact-form">
+                <input type="text" name="fullname" placeholder="Full Name" required>
+                <br>
+                <input type="tel" name="phone" placeholder="Phone Number" required>
+                <br>
+                <input type="email" name="email" placeholder="Email Address" required>
+                <br>
+                <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+                <br>
+                <button type="submit">Send Message</button>
+            </form>
         </section>
     </main>
     <footer>
         <h3>&copy; Portfolio of Daniyaal Adams 2026</h3>
     </footer>
 </body>
-
 </html>
