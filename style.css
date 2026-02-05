@@ -166,6 +166,7 @@ footer {
     flex-direction: column;
     }
     #contact-details, #contact-form {
-        width: 95%;
+        width: 100%;
     }
+
 }
